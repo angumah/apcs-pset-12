@@ -5,10 +5,6 @@ public class ProblemSet12 {
     public static void main(String[] args) {
         ProblemSet12 test = new ProblemSet12();
 
-        int[] arr = {1, 2, 3, 4};
-
-        System.out.println(test.strDist("catcowcat", "cat"));
-
     }
 
 
@@ -52,13 +48,11 @@ public class ProblemSet12 {
 
         if (rows < 0) {
             return -1;
-        }
-
-        if (rows == 0) {
+        } else
+            if (rows == 0) {
             return 0;
-        }
-
-        if (rows == 1) {
+        }else
+            if (rows == 1) {
             return 1;
         } else {
             return rows + triangle(rows-1);
@@ -70,9 +64,8 @@ public class ProblemSet12 {
 
         if (n < 0) {
             return -1;
-        }
-
-        if (n == 0) {
+        } else
+            if (n == 0) {
             return 0;
         }
 
@@ -98,12 +91,11 @@ public class ProblemSet12 {
 
         if (text == null) {
             return null;
-        }
-
-        if (text.length() == 0) {
+        } else
+            if (text.length() == 0) {
             return text;
-        }
-        if (text.charAt(0) == 'x') {
+        } else
+            if (text.charAt(0) == 'x') {
             return 'y' + changeXY(text.substring(1));
         }
         return text.charAt(0) + changeXY(text.substring(1));
